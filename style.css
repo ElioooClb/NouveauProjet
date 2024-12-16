@@ -25,10 +25,11 @@ header {
 nav ul {
     list-style-position: inside;
     list-style: none;
+     margin-left: -700px; /* Décale le menu à gauche */
     font-size: larger;
+    align-items: flex-start;
     display: flex;
-    gap: 20px; /* Espacement entre les éléments */
-    justify-content: center;
+    gap: 30px; /* Espacement entre les éléments */
 }
 
 h1 {
@@ -46,18 +47,18 @@ body {
 .image-container {
     display: flex;
     justify-content: center; /* Centre horizontalement */
-    gap: 20px; /* Ajoute un espace entre les images */
+    gap: 100px; /* Ajoute un espace entre les images */
     margin-top: 20px; /* Espace au-dessus des images */
 }
 
 .image-container img {
-    width: 200px; /* Taille des images */
+    width: 300px; /* Taille des images */
     height: auto; /* Garde les proportions */
-    border-radius: 10px; /* Coins arrondis (optionnel) */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère (optionnel) */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère */
     transition: transform 0.3s ease; /* Animation au survol */
 }
 
 .image-container img:hover {
-    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+    transform: scale(1.2); /* Agrandit légèrement l'image au survol */
 }
