@@ -1,0 +1,63 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'en-tête */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les enfants horizontalement */
+    justify-content: flex-start; /* Aligne verticalement vers le haut */
+    padding-top: 20px; /* Espace en haut */
+}
+
+.logo {
+    display: block;
+    margin-bottom: 10px; /* Remonte légèrement l'image */
+    max-width: 150px; /* Contrôle la taille de l'image */
+    height: auto; /* Garde les proportions */
+}
+
+/* Navigation */
+nav ul {
+    list-style-position: inside;
+    list-style: none;
+    font-size: larger;
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center; /* Centre le titre horizontalement */
+}
+/* Intégration globale de la police */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Flexbox pour les trois images */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px; /* Ajoute un espace entre les images */
+    margin-top: 20px; /* Espace au-dessus des images */
+}
+
+.image-container img {
+    width: 200px; /* Taille des images */
+    height: auto; /* Garde les proportions */
+    border-radius: 10px; /* Coins arrondis (optionnel) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère (optionnel) */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
