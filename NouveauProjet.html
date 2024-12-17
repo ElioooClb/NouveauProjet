@@ -1,39 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courir - Sneakers et baskets</title>
     <link rel="shortcut icon" href="courir2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="courir.png" alt="Logo Courir" class="logo">
-        <nav>
+        <div class="top-bar">
+            <p>Christmas Deals : Jusqu'à -25% sur une sélection d'articles*</p>
+        </div>
+        <div class="main-header">
+            <img src="courir.png" alt="Logo Courir" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Noël</a></li>
+                    <li><a href="#">Chaussures</a></li>
+                    <li><a href="#">Vêtements</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <li><a href="#">Marques</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Promos</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="account">Mon compte</a>
+                <a href="#" class="cart">Panier</a>
+            </div>
+        </div>
+        <nav class="sub-nav">
             <ul>
-                <li>Enfant</li>
-                <li>Femme</li>
-                <li>Homme</li>
-                <li>Plante</li>
-                <li>Poney</li>
+                <li><a href="#">Nouveautés</a></li>
+                <li><a href="#">Meilleures ventes</a></li>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">New Balance</a></li>
+                <li><a href="#">Jordan</a></li>
+                <li><a href="#">Puma</a></li>
             </ul>
         </nav>
-        <h1>Trouver un titre</h1>
-        <div class="image-container">
-            <img src="snkrs1.jpg" alt="Image 1">
-            <img src="snkrs2.jpg" alt="Image 2">
-            <img src="snkrs3.jpg" alt="Image 3">
-        </div>
     </header>
+
     <main>
-        <section>
-            <h2>Blabla</h2>
+        <section class="hero">
+            <h1>DÉCOUVRIR LA COLLECTION</h1>
+            <div class="hero-grid">
+                <img src="snkrs1.jpg" alt="Collection 1">
+                <img src="snkrs2.jpg" alt="Collection 2">
+                <img src="snkrs3.jpg" alt="Collection 3">
+            </div>
         </section>
-        <section>
-            <h2>Blabla</h2>
+
+        <section class="trending">
+            <h2>TENDANCES DU MOMENT</h2>
+            <div class="trend-grid">
+                <article class="product-card">
+                    <img src="product1.jpg" alt="HANDBALL SPEZIAL">
+                    <h3>HANDBALL SPEZIAL</h3>
+                    <p class="brand">ADIDAS ORIGINALS</p>
+                    <p class="price">115,00 €</p>
+                </article>
+                <!-- Ajoutez d'autres product-cards ici -->
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AIDE</h3>
+                <ul>
+                    <li><a href="#">Foire aux questions</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Suivre mes commandes</a></li>
+                </ul>
+            </div>
+            <!-- Ajoutez d'autres sections du footer -->
+        </div>
+    </footer>
 </body>
 </html>
